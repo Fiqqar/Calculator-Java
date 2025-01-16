@@ -1,0 +1,95 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:padding="24dp"
+    android:gravity="center"
+    android:background="@color/background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/main"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:text="Calculator"
+        android:textSize="28sp"
+        android:textColor="@color/primary"
+        android:layout_marginBottom="32dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/edAngka1"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:hint="Angka 1"
+        android:inputType="number"/>
+    <EditText
+        android:id="@+id/edAngka2"
+        android:layout_width="300dp"
+        android:layout_height="48dp"
+        android:hint="Angka 2"
+        android:inputType="number"/>
+    <LinearLayout
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnTambah"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="55dp"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/secondary"
+            android:text="Tambah (+)"/>
+        <Button
+            android:id="@+id/btnKurang"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/secondary"
+            android:text="Kurang (-)"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginStart="20dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btnKali"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="50dp"
+            android:layout_marginStart="55dp"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/secondary"
+            android:text="Kali (*)"/>
+        <Button
+            android:id="@+id/btnBagi"
+            android:layout_width="100dp"
+            android:layout_height="55dp"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/secondary"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/txtHasil"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hasil : "/>
+
+    <Button
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/secondary"
+        android:id="@+id/btnClear"
+        android:layout_marginTop="30dp"
+        android:layout_width="100dp"
+        android:layout_height="55dp"
+        android:text="Clear"/>
+
+</LinearLayout>
