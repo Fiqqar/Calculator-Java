@@ -1,5 +1,6 @@
 package com.example.myapplication;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -21,6 +22,7 @@ public class MainActivity2 extends AppCompatActivity {
     Button btnKali;
     Button btnBagi;
     Button btnClear;
+    Button btnBack;
     TextView txtHasil;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,6 +37,7 @@ public class MainActivity2 extends AppCompatActivity {
         btnBagi = (Button) findViewById(R.id.btnBagi);
         btnClear = (Button) findViewById(R.id.btnClear);
         txtHasil = (TextView) findViewById(R.id.txtHasil);
+        btnBack = (Button) findViewById(R.id.btnBack);
 
         btnTambah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +67,13 @@ public class MainActivity2 extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 ClearText();
+            }
+        });
+        btnBack.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent toLogin = new Intent(MainActivity2.this, MainActivity.class);
+                startActivity(toLogin);
             }
         });
     };

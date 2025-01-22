@@ -72,7 +72,8 @@
             android:layout_width="100dp"
             android:layout_height="55dp"
             android:backgroundTint="@color/primary"
-            android:textColor="@color/secondary"/>
+            android:textColor="@color/secondary"
+            android:text="Bagi (/)"/>
     </LinearLayout>
     <TextView
         android:id="@+id/txtHasil"
@@ -91,5 +92,13 @@
         android:layout_width="100dp"
         android:layout_height="55dp"
         android:text="Clear"/>
+    <Button
+        android:backgroundTint="@color/primary"
+        android:textColor="@color/secondary"
+        android:id="@+id/btnBack"
+        android:layout_marginTop="20dp"
+        android:layout_width="180dp"
+        android:layout_height="55dp"
+        android:text="Kembali ke login"/>
 
 </LinearLayout>
